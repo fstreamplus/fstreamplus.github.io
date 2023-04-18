@@ -15,6 +15,6 @@
     ~
     <a href="https://github.com/fstreamplus/fstreamplus.github.io/issues">Report Bug</a>
     ~
-    <a href="https://github.com/fstreamplus/fstreamplus.github.io/issues">Request Feature</a>
+    <a href="https://github.com/fstreamplus/fstreamplus.github.io/issues">Request Series</a>
   </p>
 </div>
