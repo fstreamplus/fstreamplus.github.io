@@ -13,8 +13,8 @@
     <br />
     <a href="mailto:logandoescode@protonmail.ch">Email</a>
     ~
-    <a href="https://github.com/logandoescode/logandoescode.github.io/issues">Report Bug</a>
+    <a href="https://github.com/fstreamplus/fstreamplus.github.io/issues">Report Bug</a>
     ~
-    <a href="https://github.com/logandoescode/logandoescode.github.io/issues">Request Feature</a>
+    <a href="https://github.com/fstreamplus/fstreamplus.github.io/issues">Request Feature</a>
   </p>
 </div>
