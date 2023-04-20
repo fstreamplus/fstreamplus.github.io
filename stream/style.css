@@ -96,6 +96,9 @@ header {
   color: var(--dark);
 }
 
+.novideofiles {
+  color: #7c0000;
+}
 
 /* MAIN CONTIANER */
 .main-container {
@@ -283,3 +286,4 @@ footer {
   
    
 }
+

@@ -72,15 +72,18 @@
 
     <!-- FOOTER -->
     <footer>
-      <p><u>No video files are hosted on ƒStream</u></p>
+      <p class="novideofiles"><u>No video files are hosted on ƒStream</u></p>
+      <br>
+      <p>ƒStream+ v0.2b unstable</p>
+      <p id="useragent"></p>
       <br>
       <p>&copy 2023 ƒStream, Inc.</p>
       <p>LoganDoesCode &copy 2019-2023</p>
     </footer>
   </div>
 </body>
-</html>
-<!-- partial -->
-  
-</body>
+<script>
+  let agent = navigator.userAgent;
+  document.getElementById("useragent").innerHTML = agent;
+    </script>
 </html>
