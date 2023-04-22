@@ -108,6 +108,10 @@ header {
   color: #2a4400;
 }
 
+.greentext {
+  color: #00bb22;
+}
+
 /* MAIN CONTIANER */
 .main-container {
   padding: 50px;
