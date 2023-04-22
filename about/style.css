@@ -1,0 +1,526 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.0.2/font/fontawesome-webfont.eot?v=3.0.1');
+  src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.0.2/font/fontawesome-webfont.eot?#iefix&v=3.0.1') format('embedded-opentype'), url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.0.2/font/fontawesome-webfont.woff?v=3.0.1') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.0.2/font/fontawesome-webfont.ttf?v=3.0.1') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f2f2f2;
+}
+a {
+  -moz-transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  color: #3385d6;
+}
+a:hover {
+  color: #66a3e0;
+}
+h1,
+h2,
+h3 {
+  font-family: Georgia, serif;
+}
+h1 {
+  margin-top: 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3em;
+  letter-spacing: -2px;
+}
+h1:after {
+  content: "❦";
+  display: block;
+  margin: 0.3em 0 1.3em;
+  text-align: center;
+  font-weight: normal;
+}
+h1 span {
+  display: block;
+  font-size: 40%;
+  text-transform: none;
+  font-weight: normal;
+  letter-spacing: 0;
+}
+hr {
+  margin: 1em 0;
+  border: none;
+  border-top: 1px solid #d9d9d9;
+}
+body,
+input,
+button,
+select,
+textarea {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 15px;
+  line-height: 1.333;
+  word-spacing: 0;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+.placeholder {
+  color: #999;
+  font-style: italic;
+}
+:-moz-placeholder {
+  color: #999;
+  font-style: italic;
+}
+:-ms-input-placeholder {
+  color: #999;
+  font-style: italic;
+}
+::-webkit-input-placeholder {
+  color: #999;
+  font-style: italic;
+}
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+input[type="email"],
+input[type="url"],
+input[type="date"],
+input[type="time"],
+input[type="month"],
+input[type="week"],
+input[type="datetime"],
+input[type="datetime-local"],
+select,
+textarea {
+  display: inline-block;
+  margin: 4px 0;
+  border: 1px solid #d9d9d9;
+  padding: 6px;
+  line-height: normal;
+  outline: none;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.07);
+  background: #fafafa;
+}
+input[type="text"]:hover,
+input[type="password"]:hover,
+input[type="number"]:hover,
+input[type="tel"]:hover,
+input[type="email"]:hover,
+input[type="url"]:hover,
+input[type="date"]:hover,
+input[type="time"]:hover,
+input[type="month"]:hover,
+input[type="week"]:hover,
+input[type="datetime"]:hover,
+input[type="datetime-local"]:hover,
+select:hover,
+textarea:hover {
+  border-color: #c0c0c0;
+}
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+select:focus,
+textarea:focus {
+  border-color: #59d;
+}
+input[type="text"].error,
+input[type="password"].error,
+input[type="number"].error,
+input[type="tel"].error,
+input[type="email"].error,
+input[type="url"].error,
+input[type="date"].error,
+input[type="time"].error,
+input[type="month"].error,
+input[type="week"].error,
+input[type="datetime"].error,
+input[type="datetime-local"].error,
+select.error,
+textarea.error {
+  border: 1px solid #d23;
+  color: #d23;
+}
+select {
+  padding: 5px;
+}
+textarea {
+  overflow-y: auto;
+}
+fieldset {
+  margin: 20px -20px;
+  border: none;
+  padding: 15px 20px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
+fieldset .legend {
+  margin-top: 0;
+}
+.formrow .label {
+  font-size: 12px;
+  font-weight: bold;
+}
+.formrow .label.req:after {
+  content: "*";
+  color: #d23;
+}
+.formrow > .label {
+  display: none;
+}
+.formrow .formitem {
+  display: inline-block;
+  vertical-align: baseline;
+  width: 100%;
+  padding: 0 0 15px;
+}
+.formrow .formitem > * {
+  float: left;
+}
+.formrow .formitem > .label {
+  float: none;
+  display: block;
+}
+.formrow .formitem input[type="text"],
+.formrow .formitem input[type="password"],
+.formrow .formitem input[type="number"],
+.formrow .formitem input[type="tel"],
+.formrow .formitem input[type="email"],
+.formrow .formitem input[type="url"],
+.formrow .formitem input[type="date"],
+.formrow .formitem input[type="time"],
+.formrow .formitem input[type="month"],
+.formrow .formitem input[type="week"],
+.formrow .formitem input[type="datetime"],
+.formrow .formitem input[type="datetime-local"],
+.formrow .formitem select,
+.formrow .formitem textarea {
+  width: 100%;
+}
+.formrow .formitem label.error {
+  clear: left;
+  font-size: 11px;
+  font-weight: bold;
+  color: #d23;
+}
+.formrow .formitem .ticks {
+  padding: 5px 0 0;
+}
+.formrow .formitem .ticks label {
+  -moz-transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  display: inline-block;
+  color: #999;
+}
+.formrow .formitem .ticks label:hover {
+  color: #666;
+}
+.formrow .formitem .ticks label input.checked ~ span {
+  color: #000;
+}
+.formrow .formitem .ticks label input:checked ~ span {
+  color: #000;
+}
+.formrow .formitem .ticks label > span {
+  display: block;
+  margin: 0 15px 5px 20px;
+  cursor: default;
+}
+.formrow .formitem .ticks label input[type="checkbox"],
+.formrow .formitem .ticks label input[type="radio"] {
+  float: left;
+  margin: 1px -9px 0 0;
+}
+.formrow .formitem .ticks label input[type="checkbox"].error ~ span,
+.formrow .formitem .ticks label input[type="radio"].error ~ span {
+  color: #d23;
+}
+.formrow .formitem .rating {
+  padding: 5px 0 0;
+}
+.formrow .formitem .rating label {
+  float: right;
+  width: 42px;
+  height: 42px;
+  font-size: 42px;
+  line-height: 1;
+  cursor: pointer;
+}
+.formrow .formitem .rating label:before {
+  font-family: "FontAwesome";
+  content: "\f006";
+}
+.formrow .formitem .rating label span {
+  display: none;
+}
+.formrow .formitem .rating input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.formrow .formitem .rating label:hover:before,
+.formrow .formitem .rating label:hover ~ label:before,
+.formrow .formitem .rating input.checked ~ label:before {
+  font-family: "FontAwesome";
+  content: "\f005";
+}
+.formrow .formitem .rating input:checked ~ label:before {
+  font-family: "FontAwesome";
+  content: "\f005";
+}
+.formrow .formitem .rating:hover input ~ label:before {
+  font-family: "FontAwesome";
+  content: "\f006";
+}
+.formrow .formitem .rating:hover label:hover:before,
+.formrow .formitem .rating:hover label:hover ~ label:before {
+  font-family: "FontAwesome";
+  content: "\f005";
+}
+.gt480 body {
+  padding: 40px;
+}
+.gt480 fieldset {
+  margin: 40px 0;
+  padding: 30px 40px;
+}
+.gt480 .formrow {
+  font-size: 0.1%;
+  line-height: 0;
+  word-spacing: -0.3em;
+  margin-right: -10px;
+}
+.gt480 .formrow .formitem {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 15px;
+  line-height: 1.333;
+  word-spacing: 0;
+  padding-right: 10px;
+}
+.gt480 .formrow .formitem:last-child {
+  margin-right: -99px;
+}
+.gt480 .formrow .formitem:before {
+  content: "\00a0";
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 15px;
+  height: 15px;
+  margin-top: -15px;
+}
+.gt480 .formrow .formitem .rating label {
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+}
+.gt480 .formrow .col1of1 {
+  width: 100%;
+}
+.gt480 .formrow .col1of2 {
+  width: 50%;
+}
+.gt480 .formrow .col1of3 {
+  width: 33.33%;
+}
+.gt480 .formrow .col2of3 {
+  width: 66.66%;
+}
+.gt480 .formrow .col1of4 {
+  width: 25%;
+}
+.gt480 .formrow .col3of4 {
+  width: 75%;
+}
+.gt480 .formrow .col1of5 {
+  width: 20%;
+}
+.gt480 .formrow .col2of5 {
+  width: 40%;
+}
+.gt480 .formrow .col3of5 {
+  width: 60%;
+}
+.gt480 .formrow .col4of5 {
+  width: 80%;
+}
+.gt800 body {
+  padding: 80px;
+}
+.gt800 .wideform .formrow {
+  padding-left: 25%;
+}
+.gt800 .wideform .formrow > .label {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 15px;
+  line-height: 1.333;
+  word-spacing: 0;
+  font-size: 12px;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: -33.33333333%;
+  padding: 13px 10px 20px 3.33333333px;
+  width: 33.33333333%;
+}
+.gt800 .wideform .formrow .formitem {
+  vertical-align: top;
+}
+.gt800 .wideform .formrow .formitem:before {
+  content: none;
+}
+.gt800 .wideform .formrow .formitem > .label {
+  display: none;
+}
+.gt800 .wideform .formrow .formitem .ticks,
+.gt800 .wideform .formrow .formitem .rating {
+  padding-top: 10px;
+}
+@media screen and (min-width: 481px) {
+  body {
+    padding: 40px;
+  }
+  fieldset {
+    margin: 40px 0;
+    padding: 30px 40px;
+  }
+  .formrow {
+    font-size: 0.1%;
+    line-height: 0;
+    word-spacing: -0.3em;
+    margin-right: -10px;
+  }
+  .formrow .formitem {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 15px;
+    line-height: 1.333;
+    word-spacing: 0;
+    padding-right: 10px;
+  }
+  .formrow .formitem:last-child {
+    margin-right: -99px;
+  }
+  .formrow .formitem:before {
+    content: "\00a0";
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 15px;
+    height: 15px;
+    margin-top: -15px;
+  }
+  .formrow .formitem .rating label {
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+  }
+  .formrow .col1of1 {
+    width: 100%;
+  }
+  .formrow .col1of2 {
+    width: 50%;
+  }
+  .formrow .col1of3 {
+    width: 33.33%;
+  }
+  .formrow .col2of3 {
+    width: 66.66%;
+  }
+  .formrow .col1of4 {
+    width: 25%;
+  }
+  .formrow .col3of4 {
+    width: 75%;
+  }
+  .formrow .col1of5 {
+    width: 20%;
+  }
+  .formrow .col2of5 {
+    width: 40%;
+  }
+  .formrow .col3of5 {
+    width: 60%;
+  }
+  .formrow .col4of5 {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 801px) {
+  body {
+    padding: 80px;
+  }
+  .wideform .formrow {
+    padding-left: 25%;
+  }
+  .wideform .formrow > .label {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 15px;
+    line-height: 1.333;
+    word-spacing: 0;
+    font-size: 12px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: -33.33333333%;
+    padding: 13px 10px 20px 3.33333333px;
+    width: 33.33333333%;
+  }
+  .wideform .formrow .formitem {
+    vertical-align: top;
+  }
+  .wideform .formrow .formitem:before {
+    content: none;
+  }
+  .wideform .formrow .formitem > .label {
+    display: none;
+  }
+  .wideform .formrow .formitem .ticks,
+  .wideform .formrow .formitem .rating {
+    padding-top: 10px;
+  }
+}
+
+body {
+  color: rgb(156, 204, 226);
+  background-color: #141414
+}
+
+h2 {
+  color: rgb(227, 204, 151)
+}
+
+h3 {
+  color: rgb(227, 204, 151)
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
