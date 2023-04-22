@@ -96,8 +96,16 @@ header {
   color: var(--dark);
 }
 
-.novideofiles {
+.redfooter {
   color: #7c0000;
+}
+
+.fver {
+  color: #006489;
+}
+
+.useragent {
+  color: #2a4400;
 }
 
 /* MAIN CONTIANER */
