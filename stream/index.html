@@ -15,12 +15,25 @@
 
     <!-- HEADER -->
     <header>
-      <div class="fstreamplusLogo">
-        <br>
+      <div class="fstreamplusLogo"><br>
         <a id="logo" href="#home"><img src="assets/logo.png" alt="Logo Image"></a>
-      </div>
-      <nav class="sub-nav">      
-      </nav>      
+      </div>     
+      <nav class="main-nav"><br>              
+        <a href="../stream">Stream</a>
+        <a href="https://logandoescode.github.io/">LDC</a>
+        <a href="../about">About</a>      
+      </nav>
+      <nav class="sub-nav"><br>
+        <a href="javascript:nosearch();"><i class="fas fa-search sub-nav-logo"></i></a>
+        <a href="../login">Logout</a>        
+      </nav>
+    </header>
+    
+      <script>
+        function nosearch() {
+    alert('ƒStream+ does not support a search feature yet.');
+}
+      </script>
     </header>
     <!-- END OF HEADER -->
     
@@ -77,7 +90,7 @@
     <footer>
       <p class="redfooter"><u>No video files are hosted on ƒStream</u></p>
       <br>
-      <p class="fver">ƒStream+ <u>v1.1<span class="greentext">ꜛ</span></u> beta (<span class="redfooter">unstable</span>)</p>
+      <p class="fver">ƒStream+ <u>v1.6<span class="greentext">ꜛ</span></u> beta (<span class="redfooter">unstable</span>)</p>
       <p class="useragent" id="useragent"></p>
       <br>
       <p>&copy 2023 ƒStream, Inc.</p>
